@@ -105,9 +105,10 @@ ALTER TABLE NasvilleHousingProject ADD PropertySplitCity NVARCHAR(255);
 UPDATE NasvilleHousingProject
 SET PropertySplitAddress = SUBSTRING(PropertyAddress, 1, CHARINDEX(',', PropertyAddress) - 1),
     PropertySplitCity = SUBSTRING(PropertyAddress, CHARINDEX(',', PropertyAddress) + 1, LEN(PropertyAddress));
-Similarly, the OwnerAddress field was split into OwnerSplitAddress, OwnerSplitCity, and OwnerSplitState using the PARSENAME function. This step allows for more detailed regional analysis, such as identifying cities or areas with the highest sales volume or property values. This information is invaluable for businesses or policymakers looking to make targeted decisions in specific regions.
 
 ```
+
+Similarly, the OwnerAddress field was split into OwnerSplitAddress, OwnerSplitCity, and OwnerSplitState using the PARSENAME function. This step allows for more detailed regional analysis, such as identifying cities or areas with the highest sales volume or property values. This information is invaluable for businesses or policymakers looking to make targeted decisions in specific regions.
 
 ##### Step 5: Standardising Categorical Data
 The SoldAsVacant field, which indicated whether a property was sold as vacant, used ‘Y’ and ‘N’ values. These were replaced with more descriptive terms (‘Yes’ and ‘No’) to make the data more interpretable for analysis:
