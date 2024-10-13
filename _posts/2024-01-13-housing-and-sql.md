@@ -42,18 +42,30 @@ Dates play a crucial role in analysing time-based trends such as seasonal sales 
 
 In the code below, we:
 
-* SELECT saleDateConverted, CONVERT(Date, SaleDate)
-* FROM NasvilleHousingProject;
+```sql
 
-# After confirming the appropriate format, the next step was to update the dataset:
+SELECT saleDateConverted, CONVERT(Date, SaleDate)
+FROM NasvilleHousingProject;
 
-* UPDATE NasvilleHousingProject
-* SET SaleDate = CONVERT(Date, SaleDate);
+```
 
-# In cases where the conversion did not update properly due to constraints or invalid data, a new column was created:
+###### After confirming the appropriate format, the next step was to update the dataset:
 
-* ALTER TABLE NasvilleHousingProject ADD SaleDateConverted Date;
-* UPDATE NasvilleHousingProject SET SaleDateConverted = CONVERT(Date, SaleDate);
+```sql
+
+UPDATE NasvilleHousingProject
+SET SaleDate = CONVERT(Date, SaleDate);
+
+```
+
+##### In cases where the conversion did not update properly due to constraints or invalid data, a new column was created:
+
+```sql
+
+ALTER TABLE NasvilleHousingProject ADD SaleDateConverted Date;
+UPDATE NasvilleHousingProject SET SaleDateConverted = CONVERT(Date, SaleDate);
+
+```
 
 By standardising all dates, the dataset was now structured in a way that allowed reliable time-based analysis. This step ensures that insights related to time periods, such as quarterly or yearly performance trends, were based on accurate data. For businesses, having consistent date formats helps in identifying patterns like seasonal trends, which could inform strategic decisions around marketing, sales, or investment.
 
