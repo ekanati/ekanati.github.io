@@ -9,7 +9,7 @@ plugins:
 #-------------------------------
 # General Site Settings
 title: Emmanuel Kanati
-description: "Hi I'm Emmanuel, and I'm a Data Scientist. I invite you to explore my Data Science portfolio, showcasing interesting projects with a profound emphasis on driving significant business impact. Please visit my Github & LinkedIn pages (or download my CV) by using the links below!"
+description: "Hi I'm Emmanuel, and I'm a Data Scientist. I invite you to explore my Data Science portfolio, showcasing interesting projects with a profound emphasis on driving significant business impact. Please visit my Github & LinkedIn pages by using the links below!"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
