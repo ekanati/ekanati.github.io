@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Transforming Raw Housing Data into Usable Insights - A SQL Approach to Nashville Housing Data
+title: Transforming Nashville Housing Data: A SQL Approach to Insightful Analysis
 image: "/posts/sqlhousing-title-img.png.jpg"
 tags: [SQL, EDA, Data Integrity]
 ---
